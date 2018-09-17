@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.niky.finaltest">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Contact" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".Laws" />
+        <activity android:name=".Menu" />
+        <activity android:name=".Register" />
+        <activity android:name=".JobBankMenu" />
+        <activity android:name=".Off_Finder" />
+        <activity android:name=".CodeVerification" />
+        <activity android:name=".Ads_show" />
+        <activity android:name=".Estekhdami" />
+        <activity android:name=".Setting" />
+        <activity android:name=".Search" />
+        <activity android:name=".Menu2" />
+        <activity android:name=".SabtAgahi" />
+        <activity android:name=".SabtAgahi_other" />
+        <activity android:name=".SabtAgahi_Takhfif" />
+        <activity android:name=".SabtAgahi_Estekhdam" />
+        <activity android:name=".SabtAgahi_Car" />
+        <activity android:name=".SabtAgahi_Amlak_Home" />
+        <activity android:name=".SabtAgahi_Amlak_Office" />
+        <activity android:name=".Filter_group" />
+        <activity android:name=".Filter_Estekhdami" />
+        <activity android:name=".Filter_Khodro" />
+        <activity android:name=".Filter_Home" />
+        <activity android:name=".Filter_Estekhdami_monshi_fani" />
+        <activity android:name=".Filter_other" />
+        <activity android:name=".Ads" />
+        <activity android:name=".Estekhdami_menu"></activity>
+    </application>
+
+</manifest>
