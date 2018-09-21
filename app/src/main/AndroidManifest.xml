@@ -25,14 +25,12 @@
         <activity android:name=".Contact" />
         <activity android:name=".ContactUs" />
         <activity android:name=".Laws" />
-        <activity android:name=".Menu" />
         <activity android:name=".Register" />
         <activity android:name=".JobBankMenu" />
         <activity android:name=".Off_Finder" />
         <activity android:name=".CodeVerification" />
         <activity android:name=".Ads_show" />
         <activity android:name=".Estekhdami" />
-        <activity android:name=".Setting" />
         <activity android:name=".Search" />
         <activity android:name=".Menu2" />
         <activity android:name=".SabtAgahi" />
@@ -49,7 +47,8 @@
         <activity android:name=".Filter_Estekhdami_monshi_fani" />
         <activity android:name=".Filter_other" />
         <activity android:name=".Ads" />
-        <activity android:name=".Estekhdami_menu"></activity>
+        <activity android:name=".Estekhdami_menu" />
+        <activity android:name=".Menu1" />
     </application>
 
 </manifest>
