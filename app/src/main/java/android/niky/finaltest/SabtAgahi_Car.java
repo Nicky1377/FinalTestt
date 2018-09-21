@@ -79,6 +79,8 @@ public class SabtAgahi_Car extends AppCompatActivity {
             }
         });
 
+        Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
+
     }
     public void tt(String s)
     {

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class SabtAgahi extends AppCompatActivity {
     Button estekhdam,takhfifYab,amlak,naghlie,electric,home,khadamat,tajhizat,sargarmi,personal;
@@ -59,6 +60,8 @@ public class SabtAgahi extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
 
     }
 }

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Tajhizat extends AppCompatActivity {
 Button tajhizat,omde;
@@ -25,6 +26,8 @@ Button tajhizat,omde;
             public void onClick(View view) {
                 Intent i=new Intent(Tajhizat.this,Tajhizat_tajhizat.class);
                 startActivity(i);
+
+                Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
             }
         });
 

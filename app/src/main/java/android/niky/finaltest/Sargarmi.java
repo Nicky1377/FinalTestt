@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Sargarmi extends AppCompatActivity {
 Button cycle,sport,travel,asbab_bazi,music,book,pet,other;
@@ -40,6 +41,8 @@ Button cycle,sport,travel,asbab_bazi,music,book,pet,other;
                 startActivity(i);
             }
         });
+
+        Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
 
     }
 }

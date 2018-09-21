@@ -62,6 +62,8 @@ public class SabtAgahi_Amlak_Home extends AppCompatActivity {
         AmlakType_map();
         Rahn_To_Ejareh_map();
 
+        Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
+
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

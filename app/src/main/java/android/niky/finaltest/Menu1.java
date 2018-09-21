@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-public class Menu2 extends AppCompatActivity {
+public class Menu1 extends AppCompatActivity {
     View navigationBar;
     ImageView Home,Add,Menu,MenuLine,Search;
 
@@ -19,7 +19,7 @@ public class Menu2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu2);
+        setContentView(R.layout.activity_menu1);
 
         JobBank=(RelativeLayout)findViewById(R.id.btn_bank);
         OffFinder=(RelativeLayout)findViewById(R.id.btn_off);
@@ -34,12 +34,10 @@ public class Menu2 extends AppCompatActivity {
         Setting=(RelativeLayout)findViewById(R.id.btn_setting);
         ContactUs=(RelativeLayout)findViewById(R.id.btn_contact_us);
 
-        Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
-
         JobBank.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Menu2.this,JobBankMenu.class);
+                Intent i=new Intent(Menu1.this,JobBankMenu.class);
                 startActivity(i);
             }
         });
@@ -47,7 +45,7 @@ public class Menu2 extends AppCompatActivity {
         OffFinder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Menu2.this,Off_Finder.class);
+                Intent i=new Intent(Menu1.this,Off_Finder.class);
                 startActivity(i);
             }
         });
@@ -56,7 +54,7 @@ public class Menu2 extends AppCompatActivity {
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Menu2.this,Register.class);
+                Intent i=new Intent(Menu1.this,Register.class);
                 startActivity(i);
             }
         });
@@ -65,7 +63,7 @@ public class Menu2 extends AppCompatActivity {
         Laws.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Menu2.this,Laws.class);
+                Intent i=new Intent(Menu1.this,Laws.class);
                 startActivity(i);
             }
         });
@@ -73,7 +71,7 @@ public class Menu2 extends AppCompatActivity {
         ads.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Menu2.this,Ads.class);
+                Intent i=new Intent(Menu1.this,Ads.class);
                 startActivity(i);
             }
         });
@@ -82,7 +80,7 @@ public class Menu2 extends AppCompatActivity {
         Estekhdami.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Menu2.this,Estekhdami_menu.class);
+                Intent i=new Intent(Menu1.this,Estekhdami_menu.class);
                 startActivity(i);
             }
         });
@@ -90,7 +88,7 @@ public class Menu2 extends AppCompatActivity {
         MyAds.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Menu2.this,Ads_show.class);
+                Intent i=new Intent(Menu1.this,Ads_show.class);
                 startActivity(i);
             }
         });
@@ -98,14 +96,14 @@ public class Menu2 extends AppCompatActivity {
         aboutUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Menu2.this,AboutUs.class);
+                Intent i=new Intent(Menu1.this,AboutUs.class);
                 startActivity(i);
             }
         });
         Setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Menu2.this,Setting.class);
+                Intent i=new Intent(Menu1.this,Setting.class);
                 startActivity(i);
             }
         });
@@ -113,13 +111,18 @@ public class Menu2 extends AppCompatActivity {
         ContactUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Menu2.this,ContactUs.class);
+                Intent i=new Intent(Menu1.this,ContactUs.class);
                 startActivity(i);
             }
         });
 
 
+
+
+
         map();
+
+        Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
     }
 
 
@@ -136,7 +139,7 @@ public class Menu2 extends AppCompatActivity {
         Search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Menu2.this,Search.class);
+                Intent i=new Intent(Menu1.this,Search.class);
                 startActivity(i);
 
             }
@@ -145,7 +148,7 @@ public class Menu2 extends AppCompatActivity {
         Menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Menu2.this,Menu2.class);
+                Intent i=new Intent(Menu1.this,Menu2.class);
                 startActivity(i);
 
             }
@@ -154,7 +157,7 @@ public class Menu2 extends AppCompatActivity {
         Add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Menu2.this,SabtAgahi_other.class);
+                Intent i=new Intent(Menu1.this,SabtAgahi_other.class);
                 startActivity(i);
 
             }
@@ -163,7 +166,7 @@ public class Menu2 extends AppCompatActivity {
         MenuLine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Menu2.this,Group.class);
+                Intent i=new Intent(Menu1.this,Group.class);
                 startActivity(i);
 
             }

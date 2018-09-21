@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class Laws extends AppCompatActivity {
     View navigationBar;
@@ -18,6 +19,8 @@ public class Laws extends AppCompatActivity {
         setContentView(R.layout.activity_laws);
 
         map();
+
+        Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
     }
 
 

@@ -58,6 +58,8 @@ EditText Group,Title,Type,Gheimat,Tozihat,location;
             }
         });
 
+        Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
+
         Group.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

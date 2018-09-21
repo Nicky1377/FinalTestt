@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Khadamat extends AppCompatActivity {
 Button pazirayi,beauty,clean,asbab_keshi,nurse,decor,repair,teach,computer,translate,maali,graphic,other;
@@ -45,6 +46,8 @@ Button pazirayi,beauty,clean,asbab_keshi,nurse,decor,repair,teach,computer,trans
                 startActivity(i);
             }
         });
+
+        Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
 
     }
 }

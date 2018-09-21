@@ -56,7 +56,7 @@ public class Filter_Estekhdami_monshi_fani extends AppCompatActivity {
                 tt("اعمال شد.");
             }
         });
-
+        Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
 
     }
 

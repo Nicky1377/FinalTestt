@@ -60,6 +60,8 @@ public class Filter_Home extends AppCompatActivity {
             }
         });
 
+        Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
+
     }
     public void tt(String s)
     {

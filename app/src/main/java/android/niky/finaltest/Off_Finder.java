@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Off_Finder extends AppCompatActivity {
     Button weekend,cafe,arayesh,health,tafrih,LavazemJanebi,M_Arayesh,khodro,zivar,kitchen,teach,art,khadamat,hotel,lavazem_safar,
@@ -34,5 +35,6 @@ public class Off_Finder extends AppCompatActivity {
         lavazemTahrir=(Button)findViewById(R.id.btn17);
         other=(Button)findViewById(R.id.btn18);
 
+        Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
     }
 }

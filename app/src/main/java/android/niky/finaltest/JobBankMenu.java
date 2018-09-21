@@ -2,6 +2,7 @@ package android.niky.finaltest;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class JobBankMenu extends AppCompatActivity {
     Button medical,meeting,car,arayesh,uni,art,sport,teach,majles,computer,jewels,
@@ -30,6 +31,8 @@ public class JobBankMenu extends AppCompatActivity {
         industry=(Button)findViewById(R.id.industry);
         food=(Button)findViewById(R.id.food);
         design=(Button)findViewById(R.id.design);
+
+        Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
 
     }
 }

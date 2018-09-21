@@ -62,6 +62,8 @@ public class SabtAgahi_Estekhdam extends AppCompatActivity {
             }
         });
 
+        Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
+
     }
 
     public void tt(String s)

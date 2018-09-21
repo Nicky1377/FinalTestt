@@ -11,21 +11,21 @@ import android.widget.EditText;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
+import android.widget.RadioButton;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class Setting extends AppCompatActivity {
-    View navigationBar;
-    ImageView Home,Add,Menu,MenuLine,Search;
 
-    Button cam,gallery;
+    Button cam,gallery,send;
     EditText city;
     View CityLayout;
     TextView city_1,city_2,city_3,city_4,city_5,city_6,city_7,city_8,city_9
             ,city_10,city_11,city_12,city_13,city_14;
     PopupWindow City_Layout;
-    Switch per,eng;
+    RadioButton per,eng;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,68 +34,32 @@ public class Setting extends AppCompatActivity {
 
         cam=(Button)findViewById(R.id.cam);
         gallery=(Button)findViewById(R.id.gallery);
+        send=(Button)findViewById(R.id.send);
 
         city=(EditText)findViewById(R.id.T);
 
-        eng=(Switch)findViewById(R.id.eng);
-        per=(Switch)findViewById(R.id.per);
+        eng=(RadioButton) findViewById(R.id.eng);
+        per=(RadioButton) findViewById(R.id.per);
 
         LayoutInflater inflater=(LayoutInflater)getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         CityLayout=inflater.inflate(R.layout.city_layout,null);
 
         City_map();
-        map();
+        send.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tt("اعمال شد.");
+            }
+        });
+
+        Toast.makeText(this,getLocalClassName().toString()+"\nNiky",Toast.LENGTH_LONG).show();
+
     }
-
-
-    public void map()
+    public void tt(String s)
     {
-        LayoutInflater inflater=(LayoutInflater)getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        navigationBar=inflater.inflate(R.layout.bottom_navigation,null);
-        Home=(ImageView)navigationBar.findViewById(R.id.home);
-        Add=(ImageView)navigationBar.findViewById(R.id.add);
-        Menu=(ImageView)navigationBar.findViewById(R.id.menu);
-        MenuLine=(ImageView)navigationBar.findViewById(R.id.menuLine);
-        Search=(ImageView)navigationBar.findViewById(R.id.search);
-
-        Search.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i=new Intent(Setting.this,Search.class);
-                startActivity(i);
-
-            }
-        });
-
-        Menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i=new Intent(Setting.this,Menu2.class);
-                startActivity(i);
-
-            }
-        });
-
-        Add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i=new Intent(Setting.this,SabtAgahi_other.class);
-                startActivity(i);
-
-            }
-        });
-
-        MenuLine.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i=new Intent(Setting.this,Group.class);
-                startActivity(i);
-
-            }
-        });
-
-
+        Toast.makeText(getBaseContext(),s,Toast.LENGTH_SHORT).show();
     }
+
 
     public PopupWindow popupDisplay(View view)
     {
